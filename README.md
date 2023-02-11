@@ -1,4 +1,4 @@
-# Digital Image Processing Task
+# Digital Image Processing Tasks
 
 ### Distorting image by blurring in frequency domain
 Take the FFT of your original grayscale image. Then blur your photo(using its FFT) with an "n x n" averaging filter in frequency domain. If your image has "c" number of columns then
