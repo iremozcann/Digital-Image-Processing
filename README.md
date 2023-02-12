@@ -2,7 +2,7 @@
 
 ### Distorting image by blurring in frequency domain
 Take the FFT of your original grayscale image. Then blur your photo(using its FFT) with an "n x n" averaging filter in frequency domain. If your image has "c" number of columns then
-n=2*round(c/100)+1. (Ex: If your image has 437 columns, then n=2*round(437/100) + 1 = 9; 
+n=2 * round(c/100)+1. (Ex: If your image has 437 columns, then n=2*round(437/100) + 1 = 9; 
 So apply 9x9 averaging filter to your image). You should use the FFT of the averaging mask. Then take the inverse FFT and display
 the blurred image.
 
