@@ -71,6 +71,10 @@ Take the horizontal first order derivative of your double grayscale image(withou
 Take the horizontal second order derivative of your double grayscale image(without white line) and take its absolute value. Then plot the same row of your image.Draw a white line on the same row of the
 derivative image as in previous questions and display (use subplot). 
 
+### Image Smoothing by Averaging Filter
+Write your own Matlab function(with a double for loop) to make a 7x7 pixel averaging filter (No padding, DO NOT USE imfilter, conv2 etc. functions).
+Apply the filter to the noised images that you obtained in Part 7(Adding Gaussian Random Noise to Image). Display and report the resultant images side by side in the same figure window and compare with the initial noisy images. 
+
 
 
 
