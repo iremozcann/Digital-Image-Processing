@@ -6,6 +6,8 @@ n=2*round(c/100)+1. (Ex: If your image has 437 columns, then n=2*round(437/100) 
 So apply 9x9 averaging filter to your image). You should use the FFT of the averaging mask. Then take the inverse FFT and display
 the blurred image.
 
+<img src="https://github.com/iremozcann/Digital-Image-Processing/blob/main/Distorting image by blurring in frequency domain/blurring.png" alt="alt text" width="125">
+
 ### Reconstructing blurred image by inverse filtering
 Deblur your blurred image in frequency domain. Display the blurred and deblurred images on the same graph by using subplot();. 
 
@@ -19,9 +21,15 @@ Matlab code to add random values(noise) between -0.28 and +0.28 to every pixel o
 and report the resultant images side by side in the same figure window. Draw the histograms of the original and the noisy yourName _gray images side by side in another figure.
 (Generate a medium gray image (with 180 rows and 280 columns) in Matlab whose pixel values are all 0.5 in a double variable called yourName_gray)
 
+<img src="https://github.com/iremozcann/Digital-Image-Processing/blob/main/Adding Uniform Random Noise to Image/randomnoise.png" alt="alt text" width="110">
+
+
 ### Skin color detection in YCbCr color space
 Convert your RGB color image into YCbCr color space. Mark the pixels with skin color as white and others as black using the following YCbCr thresholds:
 Y > 80 , 85 < Cb <135, 135 < Cr < 180
+
+<img src="https://github.com/iremozcann/Digital-Image-Processing/blob/main/Skin color detection and Adding Periodic Noise/skincolor.png" alt="alt text" width="150">
+
 ### Adding a periodic noise to image in frequency domain 
 Take the FFT of your original grayscale image and add a periodic sinusoidal noise by changing just the cth vertical frequency coefficient with a proper value. (c=d+10; where d is 8) 
 ### Histogram & Adaptive Histogram Equalization
@@ -34,11 +42,15 @@ represents the last digit of your student ID number. Take the screenshot of the 
 - Write a Matlab script with a double for loop to implement dilation morphological operation and dilate your binary image with the 3x3 structural element “se1=[1 1 1; 1 1 1; 1 1 1]”. (Don’t use morphological operation functions in Matlab such as imdilate();) 
 
 ### Contrast Enhancement Using Gamma Transformation
-Try to enhance the contrast of the original double grayscale image using gamma transformation. Display and report the transformed image and its histogram side by side in the same figure window. 
+Try to enhance the contrast of the original double grayscale image using gamma transformation. Display and report the transformed image and its histogram side by side in the same figure window.
+
+<img src="https://github.com/iremozcann/Digital-Image-Processing/blob/main/Contrast Enhancement Using Gamma Transformation/gamma.png" alt="alt text" width="125">
 
 ### Contrast Enhancement Using Piecewise Linear Transformation
 Apply piecewise linear transformation with 2 linear pieces to enhance the double grayscale image. Determine and report the best parameters (a and ya) as you can to enhance your image. Remember that L=1 for double grayscale
 images. Display and report the obtained images and their histogram side by side in the same figure window. 
+
+<img src="https://github.com/iremozcann/Digital-Image-Processing/blob/main/Contrast Enhancement Using Piecewise Linear Transformation/Piecewise Linear Transformation.png" alt="alt text" width="125">
 
 ### Detecting The Longest Word
 - You will use the attached Word document. Open the document and replace the texts with your name (you can use double space between words) and adjust the font size as stated in the texts. As you know, “d”
@@ -67,6 +79,9 @@ as you can.
 
 ### Finding the horizontal 1st order derivative
 Take the horizontal first order derivative of your double grayscale image(without white line). Then plot the same row of your image derivative (use subplot).
+
+<img src="https://github.com/iremozcann/Digital-Image-Processing/blob/main/Finding the horizontal 1st order derivative/firsthorizontal.png" alt="alt text" width="200">
+
 ### Finding the horizontal 2nd order derivative
 Take the horizontal second order derivative of your double grayscale image(without white line) and take its absolute value. Then plot the same row of your image.Draw a white line on the same row of the
 derivative image as in previous questions and display (use subplot). 
